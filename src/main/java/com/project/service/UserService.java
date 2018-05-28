@@ -6,7 +6,7 @@ import com.project.model.User;
 
 public interface UserService {
 	
-	void save(User user);
+	User save(User user);
 
 	void delete(User user);
 

@@ -14,8 +14,9 @@ public class UserRepositoryImpl implements UserRepository {
 
 	@Autowired
 	private SessionFactory sessionFactory;
-	public void save(User user) {
+	public User save(User user) {
 		sessionFactory.getCurrentSession().save(user);
+		return user;
 	}
 
 	public void delete(User user) {

@@ -6,7 +6,7 @@ import com.project.model.User;
 
 public interface UserRepository {
 
-	void save(User user);
+	User save(User user);
 	
 	void delete(User user);
 	
